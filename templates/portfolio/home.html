@@ -1,0 +1,617 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Mohoria Magaiwa | Portfolio
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+
+<div class="hero-grid">
+
+    <div class="hero-image">
+        <img src="{% static 'images/profile.png' %}"
+             alt="Mohoria Magaiwa">
+    </div>
+
+    <div class="hero-content">
+
+        <p class="hero-intro">
+            HELLO, I'M
+        </p>
+
+        <h1>Mohoria Magaiwa</h1>
+
+        <h2>IT Support • Networking • Cybersecurity</h2>
+
+        <p class="hero-description">
+            Information Technology graduate and Master of Science in
+            Cybersecurity and Digital Forensics student with practical
+            experience in IT support, troubleshooting, networking,
+            web technologies, and digital systems. I am passionate
+            about solving technical problems, supporting users, and
+            contributing to secure and efficient technology environments.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+                View My Projects
+            </a>
+
+            <a href="https://github.com/MohoriaMagaiwa"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-secondary">
+                GitHub
+            </a>
+
+            <a href="{% static 'documents/Joseph_Mohoria_Magaiwa_CV.pdf' %}"
+               target="_blank"
+               class="btn btn-secondary">
+                Download CV
+            </a>
+
+            <a href="#contact"
+               class="btn btn-secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about-section">
+
+
+<div class="section-heading">
+    <p class="section-label">ABOUT ME</p>
+    <h2>Who I Am</h2>
+</div>
+
+<div class="about-content">
+
+    <p>
+        I am a Bachelor of Business Information Technology graduate
+        from Mount Kenya University with a strong interest in
+        IT support, networking, cybersecurity and digital technologies.
+    </p>
+
+    <p>
+        Through academic projects and professional attachment,
+        I have gained practical experience in troubleshooting,
+        user support, software installation, system maintenance,
+        network connectivity support and ICT administration.
+    </p>
+
+    <p>
+        I enjoy learning new technologies, solving technical
+        challenges and helping organizations use technology
+        effectively and securely.
+    </p>
+
+</div>
+
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+
+<div class="section-heading">
+    <p class="section-label">EDUCATION</p>
+    <h2>Academic Background</h2>
+</div>
+
+<div class="education-card">
+
+    <h3>Master of Science in Cybersecurity and Digital Forensics</h3>
+
+    <p class="institution">
+        Open University of Kenya
+    </p>
+
+    <p>
+        Currently pursuing a Master of Science in Cybersecurity and
+        Digital Forensics with focus on cybersecurity, cyber threat
+        analysis, digital investigations, information security and
+        digital technologies.
+    </p>
+
+    <p>
+        Nairobi, Kenya
+    </p>
+
+    <a href="https://ouk.ac.ke/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Visit University Website
+    </a>
+
+</div>
+
+<div class="education-card">
+
+    <h3>Bachelor of Business Information Technology</h3>
+
+    <p class="institution">
+        Mount Kenya University
+    </p>
+
+    <p>
+        Graduated with a Bachelor of Business Information Technology,
+        gaining knowledge in information systems, databases,
+        networking, web technologies, programming and IT support.
+    </p>
+
+    <p>
+        Thika Main Campus, Thika, Kenya
+    </p>
+
+    <a href="https://www.mku.ac.ke/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Visit University Website
+    </a>
+
+</div>
+
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+
+<div class="section-heading">
+    <p class="section-label">EXPERIENCE</p>
+    <h2>Professional Experience</h2>
+</div>
+
+<div class="experience-container">
+
+    <div class="experience-card">
+
+        <h3>ICT Attachment</h3>
+
+        <p class="company">
+            Mabera Technical and Vocational College
+        </p>
+
+        <p class="duration">
+            September 2025 – December 2025
+        </p>
+
+        <ul>
+            <li>Provided IT support to staff and students.</li>
+            <li>Troubleshot hardware and software issues.</li>
+            <li>Assisted with Wi-Fi and network connectivity problems.</li>
+            <li>Installed and updated software, drivers and antivirus solutions.</li>
+            <li>Performed system maintenance and backups.</li>
+            <li>Supported ICT-related administrative activities.</li>
+        </ul>
+
+        <a href="https://maberatvc.ac.ke/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit Institution Website
+        </a>
+
+    </div>
+
+    <div class="experience-card">
+
+        <h3>Election Clerk</h3>
+
+        <p class="company">
+            Independent Electoral and Boundaries Commission (IEBC)
+        </p>
+
+        <p class="duration">
+            2022 General Election
+        </p>
+
+        <ul>
+            <li>Verified voter details during elections.</li>
+            <li>Maintained election records and forms.</li>
+            <li>Supported polling station operations.</li>
+            <li>Assisted election data recording and reporting.</li>
+        </ul>
+
+        <a href="https://www.iebc.or.ke/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit Organization Website
+        </a>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+
+<div class="section-heading">
+    <p class="section-label">SKILLS</p>
+    <h2>Technical Skills</h2>
+</div>
+
+<div class="skills-grid">
+
+    <div class="skill-card">
+        <h3>IT Support</h3>
+        <p>
+            User support, troubleshooting, maintenance and technical assistance.
+        </p>
+    </div>
+
+    <div class="skill-card">
+        <h3>Windows Systems</h3>
+        <p>
+            Installation, configuration and troubleshooting of Windows environments.
+        </p>
+    </div>
+
+    <div class="skill-card">
+        <h3>Networking</h3>
+        <p>
+            Basic network configuration, connectivity troubleshooting and support.
+        </p>
+    </div>
+
+    <div class="skill-card">
+        <h3>Microsoft Office</h3>
+        <p>
+            Word, Excel, PowerPoint and office productivity applications.
+        </p>
+    </div>
+
+    <div class="skill-card">
+        <h3>Web Technologies</h3>
+        <p>
+            HTML, CSS and basic JavaScript development.
+        </p>
+    </div>
+
+    <div class="skill-card">
+        <h3>Python &amp; Databases</h3>
+        <p>
+            Basic Python programming and SQL database operations.
+        </p>
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+
+<div class="section-heading">
+    <p class="section-label">CERTIFICATIONS</p>
+    <h2>Professional Development</h2>
+</div>
+
+<div class="certifications-container">
+
+    <!-- Newest Certificate First -->
+    <div class="certification-card">
+
+        <div class="certification-date">
+            September 2026
+        </div>
+
+        <h3>
+            Cisco Networking Academy - Introduction to Cybersecurity
+        </h3>
+
+        <p>
+            Cisco Networking Academy
+        </p>
+
+        <a href="#"
+           target="_blank">
+            View Certificate
+        </a>
+
+    </div>
+
+    <div class="certification-card">
+
+        <div class="certification-date">
+            August 2026
+        </div>
+
+        <h3>
+            Microsoft Learn - Security, Compliance and Identity Fundamentals
+        </h3>
+
+        <p>
+            Microsoft Learn
+        </p>
+
+        <a href="#"
+           target="_blank">
+            View Certificate
+        </a>
+
+    </div>
+
+    <!-- Add future certificates above older certificates -->
+
+</div>
+
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+
+<div class="section-heading">
+    <p class="section-label">PROJECTS</p>
+    <h2>Featured Projects</h2>
+</div>
+
+<div class="projects-container">
+
+    <div class="project-card">
+
+        <h3>Personal Portfolio Website</h3>
+
+        <p>
+            Responsive portfolio website developed using Django,
+            HTML and CSS to showcase professional experience,
+            education, certifications and projects.
+        </p>
+
+        <p class="tech-stack">
+            Django • HTML • CSS
+        </p>
+
+        <div class="project-links">
+
+            <a href="https://github.com/MohoriaMagaiwa/portfolio"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub Repository
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <h3>MKU News Feed System</h3>
+
+        <p>
+            News management platform developed using Django,
+            allowing publishing and management of announcements
+            and news articles.
+        </p>
+
+        <p class="tech-stack">
+            Django • Python • SQLite
+        </p>
+
+        <div class="project-links">
+
+            <a href="https://github.com/MohoriaMagaiwa/newsfeed"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub Repository
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <h3>School Management Portal</h3>
+
+        <p>
+            School administration system supporting student
+            management, authentication, academic records and reporting.
+        </p>
+
+        <p class="tech-stack">
+            Django • Python • SQLite
+        </p>
+
+        <div class="project-links">
+
+            <a href="https://github.com/MohoriaMagaiwa/schoolportal"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub Repository
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section">
+
+
+<div class="section-heading">
+    <p class="section-label">GET IN TOUCH</p>
+    <h2>Contact Me</h2>
+</div>
+
+<div class="contact-content">
+
+    <p>
+        Interested in working together, discussing opportunities,
+        or connecting about technology? Feel free to reach out.
+    </p>
+
+    <div class="contact-links">
+
+        <a href="mailto:magaiwamohoria@gmail.com"
+           class="contact-link">
+
+            <span class="contact-icon">
+
+                <svg viewBox="0 0 24 24"
+                     aria-hidden="true">
+
+                    <path d="M3 5h18v14H3V5zm0 0 9 7 9-7"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"/>
+
+                </svg>
+
+            </span>
+
+            <span>Email</span>
+
+        </a>
+
+
+        <a href="tel:+254795841296"
+           class="contact-link">
+
+            <span class="contact-icon">
+
+                <svg viewBox="0 0 24 24"
+                     aria-hidden="true">
+
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"/>
+
+                </svg>
+
+            </span>
+
+            <span>Phone</span>
+
+        </a>
+
+
+        <a href="https://wa.me/254795841296"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-link">
+
+            <span class="contact-icon">
+
+                <img src="https://cdn.simpleicons.org/whatsapp"
+                     alt="WhatsApp">
+
+            </span>
+
+            <span>WhatsApp</span>
+
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/mohoria-magaiwa-0562742a6"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-link">
+
+            <span class="contact-icon">
+
+                <img src="https://cdn.simpleicons.org/linkedin"
+                     alt="LinkedIn">
+
+            </span>
+
+            <span>LinkedIn</span>
+
+        </a>
+
+
+        <a href="https://github.com/MohoriaMagaiwa"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-link">
+
+            <span class="contact-icon">
+
+                <img src="https://cdn.simpleicons.org/github"
+                     alt="GitHub">
+
+            </span>
+
+            <span>GitHub</span>
+
+        </a>
+
+
+        <a href="https://www.facebook.com/mohoriamagaiwa/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-link">
+
+            <span class="contact-icon">
+
+                <img src="https://cdn.simpleicons.org/facebook"
+                     alt="Facebook">
+
+            </span>
+
+            <span>Facebook</span>
+
+        </a>
+
+
+        <a href="https://x.com/MohoriaMagaiwa"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-link">
+
+            <span class="contact-icon">
+
+                <img src="https://cdn.simpleicons.org/x"
+                     alt="X">
+
+            </span>
+
+            <span>X</span>
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+{% endblock %}

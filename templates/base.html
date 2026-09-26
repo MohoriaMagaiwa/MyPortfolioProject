@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="description"
+      content="Mohoria Magaiwa - Information Technology Graduate, MSc Cybersecurity and Digital Forensics Student, IT Support and Networking Professional.">
+
+<meta name="keywords"
+      content="Mohoria Magaiwa, IT Support, Networking, Cybersecurity, Django, Kenya">
+
+<title>
+    {% block title %}
+    Mohoria Magaiwa | Portfolio
+    {% endblock %}
+</title>
+
+<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+
+    <!-- LOGO -->
+    <div class="logo">
+        <a href="#home" aria-label="MMTech Home">
+            <img src="{% static 'images/favicon.ico' %}"
+                 alt="MMTech Logo">
+        </a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+</header>
+
+<main>
+
+
+{% block content %}
+{% endblock %}
+
+
+</main>
+
+<footer>
+
+
+<p>
+    © {% now "Y" %} Mohoria Magaiwa. All rights reserved.
+</p>
+
+
+</footer>
+
+</body>
+
+</html>
+
