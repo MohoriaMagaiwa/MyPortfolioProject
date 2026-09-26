@@ -946,15 +946,15 @@ CONTACT
 ========================= */
 
 .contact-section {
-text-align: center;
+text-align: left;
 }
 
 .contact-content {
-max-width: 900px;
-margin: auto;
+max-width: 100%;
 }
 
 .contact-content > p {
+max-width: 850px;
 margin-bottom: 40px;
 color: #94a3b8;
 }
@@ -969,15 +969,12 @@ gap: 18px;
 padding: 20px;
 min-height: 130px;
 
-
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
 gap: 12px;
-
-
 }
 
 .contact-icon {
@@ -985,12 +982,9 @@ width: 40px;
 height: 40px;
 color: #22d3ee;
 
-
 display: flex;
 align-items: center;
 justify-content: center;
-
-
 }
 
 .contact-icon img,
