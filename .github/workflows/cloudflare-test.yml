@@ -1,0 +1,38 @@
+
+name: Cloudflare Django Test
+
+on:
+  push:
+    branches:
+      - cloudflare-test
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Check out test branch
+        uses: actions/checkout@v6
+        with:
+          ref: cloudflare-test
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Python Worker dependencies
+        run: uv sync
+
+      - name: Prepare Python Worker packages
+        run: uv run pywrangler sync
+
+      - name: Build test Worker without deploying
+        run: uv run pywrangler deploy --dry-run
