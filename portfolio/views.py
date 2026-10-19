@@ -1,5 +1,14 @@
+
 from django.shortcuts import render
+from django.http import HttpResponse
 
 
 def home(request):
     return render(request, 'portfolio/home.html')
+
+
+def robots_txt(request):
+    content = """User-agent: *
+Allow: /
+"""
+    return HttpResponse(content, content_type="text/plain")
