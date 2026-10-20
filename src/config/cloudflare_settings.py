@@ -33,3 +33,18 @@ DATABASES = {
 
 # Keep sessions independent of the temporary database.
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
+
+
+# Static assets are served directly by Cloudflare.
+STATICFILES_DIRS = []
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# Do not use WhiteNoise storage on Cloudflare.
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
