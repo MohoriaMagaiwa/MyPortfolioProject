@@ -48,3 +48,5 @@ STORAGES = {
         "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
     },
 }
+
+ROOT_URLCONF = "config.urls"
